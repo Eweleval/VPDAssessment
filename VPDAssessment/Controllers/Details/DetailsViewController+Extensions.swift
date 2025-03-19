@@ -88,7 +88,7 @@ extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let name = detailViewModel.reposData[indexPath.row]
         cell.textLabel?.text = name.name?.capitalized
-        cell.textLabel?.textColor = .white
+        cell.textLabel?.textColor = .black
         cell.selectionStyle = .none
         cell.backgroundColor = #colorLiteral(red: 0.5855334997, green: 0.7699266076, blue: 0.8184378147, alpha: 1)
         return cell
